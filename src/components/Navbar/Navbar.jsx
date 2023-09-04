@@ -13,7 +13,7 @@ const Navbar = () => {
         <img src={images.ternium} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {["inicio", "juego", "sobre ternium", "proceso", "creadoras"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
           </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "skills", "contact"].map((item) => (
+              {["inicio", "juego", "sobre ternium", "proceso", "creadoras"].map((item) => (
                 <li className="app__flex p-text" key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

@@ -1,0 +1,93 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/master_terny.png");
+    position: cover;
+    background-size: cover;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20% auto;
+    background: rgba(255, 255, 255, 0.107);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  .app__login {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  .app__login-form {
+    width: 60%;
+    flex-direction: column;
+    margin: 1rem 2rem;
+  
+    div {
+      width: 100%;
+      margin: 0.75rem 0;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #f2f7fb;
+  
+      transition: all 0.3s ease-in-out;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.95rem;
+        border: none;
+  
+        border-radius: 7px;
+        background-color: #f2f7fb;
+  
+        font-family: var(--font-base);
+        color: var(--seconday-color);
+        outline: none;
+      }
+  
+      textarea {
+        height: 170px;
+      }
+    }
+  
+    button {
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--secondary-color);
+      font-weight: 500;
+      color: var(--white-color);
+      outline: none;
+      margin: 2rem 0 0 0;
+      font-family: var(--font-base);
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  
+  .app__login_p-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--white-color);
+      margin: 0.7rem;
+  }
